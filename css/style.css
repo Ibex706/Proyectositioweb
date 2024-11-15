@@ -1,0 +1,239 @@
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fae6e6;
+}
+
+header {
+    background-color: #0e40c9;
+    color: rgb(168, 113, 10);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+}
+
+.buscador input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.buscador button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1, main h2, main h3 {
+    color: #333;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #7a1d1d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.color-options {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.color-options button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilo del tema 1 */
+.theme1 body {
+    background-color: #d8e8eb;
+}
+
+.theme1 header {
+    background-color: #00796b;
+}
+
+.theme1 .buscador button {
+    background-color: #0c0e9e;
+}
+
+/* Estilo del tema 2 */
+.theme2 body {
+    background-color: #fff3e0;
+}
+
+.theme2 header {
+    background-color: #ff9800;
+}
+
+.theme2 .buscador button {
+    background-color: #e65100;
+}
+
+main {
+    text-align: center;
+}
+
+.text-box {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #110202;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+}
+/* Estilo general */
+.contenedor {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(173, 3, 3, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Temas */
+.tema-default {
+    background-color: #f5f5f5;
+}
+
+#tema1:checked ~ .contenedor {
+    background-color: #e0f7fa;
+}
+
+#tema2:checked ~ .contenedor {
+    background-color: #ffe0b2;
+}
+
+/* Opciones de color */
+.color-options {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.color-options input {
+    display: none;
+}
+
+.color-options label {
+    background-color: #6200ea;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.color-options label:hover {
+    background-color: #3700b3;
+}
+
+/* Artículos y secciones */
+section {
+    background-color: rgb(139, 218, 108);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(24, 20, 20, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(22, 2, 116, 0.2);
+}
+img {
+    width: 55%; /* La imagen ocupará el 100% del contenedor */
+    max-width: 250px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantener proporción */
+}
+.logo {
+    width: 150px; /* Ajusta el ancho */
+    height: auto; /* Mantén la proporción */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Para un grosor de fuente más pesado */
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Para un grosor de fuente normal */
+}
